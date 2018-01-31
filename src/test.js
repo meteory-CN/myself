@@ -31,5 +31,3 @@ let aaa = (app) => {
 let xx = (x) => {
   return x*x;
 }
-
-xx(3);
