@@ -2,7 +2,6 @@ if (1) {
   let a = 10;
   console.log(a);
 }
-
 else {
   let a = 20 ;
   console.log(a);
