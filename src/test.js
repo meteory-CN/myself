@@ -7,17 +7,12 @@ else {
   let a = 20 ;
   console.log(a);
 }
-
 function aaa (){
   const a = [];
   a.name = 'asdsads';
   a.push('asdasdasd');
   console.log(a);
 }
-
-
-
-
 ()=>{return 1};
 
 let aaa = (app) => {
