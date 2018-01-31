@@ -23,7 +23,6 @@
   </el-row>
 </div>
 </template>
-
 <script>
 export default {
   props: {
