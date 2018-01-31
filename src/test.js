@@ -15,7 +15,6 @@ function aaa (){
   console.log(a);
 }
 
-aaa()
 
 
 ()=>{return 1};
