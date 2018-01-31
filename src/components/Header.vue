@@ -4,7 +4,7 @@
     <el-col :span="24">
       <el-menu default-active="5" class="el-menu-demo" mode="horizontal" @select="">
         <el-menu-item index="1">统计平台</el-menu-item>
-        <el-menu-item index="2">图标</el-menu-item>
+        <el-menu-item index="2">图标1</el-menu-item>
         <el-menu-item index="3">用户管理</el-menu-item>
         <el-menu-item index="4">系统设置</el-menu-item>
         <el-menu-item v-if="logind" index="5">
