@@ -13,7 +13,7 @@
           <el-input v-model="password" type="password" placeholder="密码" /></el-menu-item>
         <el-menu-item v-if="logind" index="7">
           <el-button type="submit" v-on:click="login">login</el-button>
-        </el-menu-item>
+        </el-menu-item> 
         <el-menu-item v-else="logind" index="8">
           <el-button type="submit" v-on:click="logout">logout</el-button>
         </el-menu-item>
