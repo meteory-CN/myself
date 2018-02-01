@@ -114,7 +114,7 @@ export default {
 </script>
 <style scoped>
 div .header {
-  float: inherit;
+  float: top;
   text-align: left;
   display: inline;
 }

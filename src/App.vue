@@ -69,17 +69,5 @@ body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
 
-/* .header {
-  margin-left: auto;
-  float: left;
-  display: inline;
-  position: absolute;
-}
-
-.main {
-  margin-left: auto;
-  float: left;
-  position: absolute;
-} */
 
 </style>
