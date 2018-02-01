@@ -113,16 +113,5 @@ export default {
 }
 </script>
 <style scoped>
-div .header {
-  /* float: top; */
-  /* position: relative; */
-  text-align: left;
-  display: inline;
-}
-
-div .inputusername {
-  text-align: right;
-  float: right
-}
 
 </style>

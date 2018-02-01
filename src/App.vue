@@ -64,9 +64,8 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
-
 </style>
