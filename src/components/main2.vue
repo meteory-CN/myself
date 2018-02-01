@@ -15,6 +15,104 @@
       <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
     </div>
   </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
+  <div class="main1">
+    <div class="div-1">
+      <h2>First column</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. </p>
+    </div>
+    <div class="div-1">
+      <h2>Second column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+    <div class="div-1">
+      <h2>THREE column</h2>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+    </div>
+  </div>
   <div class="div-4">
     <ol v-for="blog in blogs">
       <li>{{ blog.id }}</li>
@@ -68,7 +166,7 @@ div {
 
 div .main2 {
 
-  display: flex;
+  display: inline;
 }
 
 h1 {

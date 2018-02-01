@@ -1,11 +1,11 @@
 <template>
 <div id="app">
   <!-- {{ namelist }} -->
-  <Header v-bind:namelist="namelist"></Header>
+  <Header class="header" v-bind:namelist="namelist"></Header>
   <el-row>
     <el-col :span="4">
       <keep-alive>
-        <Main>
+        <Main class="main">
           <h1 slot="title1">this is a  H1 tag</h1>
           <h2 slot="body">this is a  H2 tag</h2>
         </Main>
@@ -69,6 +69,17 @@ body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
 
+/* .header {
+  margin-left: auto;
+  float: left;
+  display: inline;
+  position: absolute;
+}
 
+.main {
+  margin-left: auto;
+  float: left;
+  position: absolute;
+} */
 
 </style>
