@@ -1,7 +1,9 @@
 <template>
 <div id="app">
   <!-- {{ namelist }} -->
-  <Header class="header" v-bind:namelist="namelist"></Header>
+  <el-row class="header">
+    <Header  v-bind:namelist="namelist"></Header>
+  </el-row>
   <el-row>
     <el-col :span="4">
       <keep-alive>
@@ -68,8 +70,10 @@ export default {
 body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
-
-Header {
+/*
+.header {
+  display: inline;
   position: fixed;
-}
+  width: 100%
+} */
 </style>
