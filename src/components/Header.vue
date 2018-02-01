@@ -36,8 +36,8 @@ export default {
     }
   },
   created: function() {
-    let app = this;
-    let session = window.sessionStorage;
+    const app = this;
+    const session = window.sessionStorage;
     let token = session.getItem('token');
     this.$http({
         method: 'post',
