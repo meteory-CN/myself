@@ -70,10 +70,9 @@ export default {
 body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
-/*
+
 .header {
-  display: inline;
   position: fixed;
-  width: 100%
-} */
+  width: auto
+}
 </style>
