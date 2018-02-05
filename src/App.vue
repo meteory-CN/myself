@@ -46,7 +46,7 @@ export default {
       namelist: [{
           iUserid: 1,
           name: 'shijie',
-          sex: 'man'
+          sex: 'man'µ
         },
         {
           iUserid: 2,
@@ -60,7 +60,7 @@ export default {
   methods: {
     Updatenamelist: function(updatedata) {
       console.log(updatedata)
-      this.namelist = updatedata
+      this.namelist = updatedata  µ
     }
   }
 }
