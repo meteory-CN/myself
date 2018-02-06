@@ -74,6 +74,10 @@ div .main2 {
 h1 {
   /* background-color: gray; */
   color: red;
+  /* font-weight: normal; */
+  text-transform: none;
+  background-color: gray;
+  color: blue;
   border: 4px solid #7c7;
 }
 

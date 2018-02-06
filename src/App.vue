@@ -70,9 +70,15 @@ export default {
 body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
+div.app {
+  display: inline-flex;
+  z-index: 99999;
+  position: inline;
+  /* position: fixed; */
+}
 
-.header {
+/* .header {
   position: fixed;
   width: auto
-}
+} */
 </style>
