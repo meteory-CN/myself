@@ -95,7 +95,7 @@ div a {
   text-decoration: none;
   color: blue;
   font-weight: bolder;
-  letter-spacing: normal;
+  letter-spacing: 2px;
 }
 
 div a:hover {
