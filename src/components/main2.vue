@@ -11,7 +11,13 @@
     </div>
     <div class="div-1">
       <h2>Second column</h2>
-      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+      <p>
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+    Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+  Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      </p>
     </div>
     <div class="div-1">
       <h2>THREE column</h2>
@@ -19,7 +25,8 @@
       Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
     Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
   Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
-Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+</p>
     </div>
   </div>
   <div class="div-4">
@@ -53,6 +60,29 @@ p {
   font-family: sans-serif;
 }
 
+
+
+a {
+  margin: 2px;
+  border: 2px solid gray;
+  padding: 2px;
+}
+
+
+.div-1 {
+  margin: 80px;
+  border: 2px solid yellow;
+  padding: 4px;
+
+}
+
+.div-4 {
+  margin: 80px;
+  border: 2px solid blue;
+  padding: 4px;
+}
+
+
 li {
   list-style: none;
   color: white;
@@ -63,19 +93,6 @@ li {
 
 div h2 {
   text-align: center;
-}
-
-div {
-  broder: 4px solid #7c7;
-  height: auto;
-  width: auto;
-  /* flex-direction: column */
-  /* font: Microsoft YaHei */
-}
-
-div .main2 {
-
-  display: inline;
 }
 
 h1 {
@@ -107,51 +124,9 @@ div a:hover {
   text-decoration: underline;
   color: black;
   font-weight: lighter;
-  letter-spacing: 1px
-}
-
-.div-1 {
-  /* broder: 4px solid #7c7; */
-  /* float: right; */
-  display: flex;
-  flex-direction: column
+  letter-spacing: 2px
 }
 
 
 
-.div-1 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 10px;
-  margin: 10px;
-  line-height: 2px
-  /* display: table; */
-}
-
-
-.div-1 p {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 10px;
-  /* font-size: 20px; */
-  margin: 10px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  /* display: table; *
-}
-
-.div-2 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 20px;
-  margin: 20px;
-}
-
-
-.div-3 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 30px;
-  margin: 30px;
-}
 </style>
