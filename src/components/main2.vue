@@ -61,7 +61,6 @@ p {
 }
 
 
-
 a {
   margin: auto;
   border: 2px solid gray;
@@ -72,7 +71,9 @@ a {
 .div-1 {
   margin: auto;
   border: 2px solid yellow;
-  padding: 4px;
+  padding: 20px;
+  /* width: 400px;
+  height: auto */
 
 }
 
