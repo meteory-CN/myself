@@ -15,7 +15,11 @@
     </div>
     <div class="div-1">
       <h2>THREE column</h2>
-      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+    Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+  Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
     </div>
   </div>
   <div class="div-4">
@@ -120,7 +124,20 @@ div a:hover {
   float: none;
   padding: 10px;
   margin: 10px;
+  line-height: 2px
   /* display: table; */
+}
+
+
+.div-1 p {
+  /* broder: 4px solid #7c7; */
+  float: none;
+  padding: 10px;
+  /* font-size: 20px; */
+  margin: 10px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  /* display: table; *
 }
 
 .div-2 h2 {

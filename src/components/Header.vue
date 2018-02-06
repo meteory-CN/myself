@@ -1,7 +1,6 @@
 <template>
 <div class="header">
-  <el-row>
-    <el-col :span="24">
+
       <el-menu default-active="5" class="el-menu-demo" mode="horizontal" @select="">
         <div class="item">
           <el-menu-item index="1">统计平台</el-menu-item>
@@ -23,8 +22,6 @@
           <el-menu-item v-if="islogin" index="9"><a>WElCOME USER : {{ iUserid }}</a></el-menu-item>
         </div>
       </el-menu>
-    </el-col>
-  </el-row>
 </div>
 </template>
 <script>
@@ -113,4 +110,17 @@ export default {
 }
 </script>
 <style scoped>
+
+div {
+  display: inline;
+}
+
+.item {
+  float: left;
+}
+
+
+.inputusername {
+  float: right;
+}
 </style>
