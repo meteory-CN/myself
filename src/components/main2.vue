@@ -1,6 +1,9 @@
 <template>
 <div class="main2">
   <h1>2 column layout example</h1>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
   <div class="main1">
     <div class="div-1">
       <h2>First column</h2>
@@ -87,7 +90,21 @@ p {
 }
 
 
+div a {
+  background: white;
+  text-decoration: none;
+  color: blue;
+  font-weight: bolder;
+  letter-spacing: normal;
+}
 
+div a:hover {
+  background: yellow;
+  text-decoration: underline;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 1px
+}
 
 .div-1 {
   /* broder: 4px solid #7c7; */
