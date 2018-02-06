@@ -63,23 +63,23 @@ p {
 
 
 a {
-  margin: 2px;
+  margin: auto;
   border: 2px solid gray;
   padding: 2px;
 }
 
 
 .div-1 {
-  margin: 80px;
+  margin: auto;
   border: 2px solid yellow;
   padding: 4px;
 
 }
 
 .div-4 {
-  margin: 80px;
+  margin: auto;
   border: 2px solid blue;
-  padding: 4px;
+  padding: auto;
 }
 
 
