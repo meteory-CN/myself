@@ -72,8 +72,10 @@ a {
   margin: auto;
   border: 2px solid yellow;
   padding: 20px;
-  /* width: 400px;
-  height: auto */
+  display: inline-block;
+  width: 400px;
+  height: auto;
+
 
 }
 
