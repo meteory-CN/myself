@@ -110,7 +110,12 @@ h1 {
 
 
 p {
-  color: gray
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  /* line-height: 40px; */
 }
 
 
