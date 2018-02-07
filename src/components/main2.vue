@@ -1,6 +1,9 @@
 <template>
 <div class="main2">
   <h1>2 column layout example</h1>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
   <div class="main1">
     <div class="div-1">
       <h2>First column</h2>
@@ -8,11 +11,22 @@
     </div>
     <div class="div-1">
       <h2>Second column</h2>
-      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+      <p>
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+    Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+  Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      </p>
     </div>
     <div class="div-1">
       <h2>THREE column</h2>
-      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.</p>
+      <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+      Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+    Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+  Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut.
+</p>
     </div>
   </div>
   <div class="div-4">
@@ -46,6 +60,32 @@ p {
   font-family: sans-serif;
 }
 
+
+a {
+  margin: auto;
+  border: 2px solid gray;
+  padding: 2px;
+}
+
+
+.div-1 {
+  margin: auto;
+  border: 2px solid yellow;
+  padding: 20px;
+  display: inline-block;
+  width: 400px;
+  height: auto;
+
+
+}
+
+.div-4 {
+  margin: auto;
+  border: 2px solid blue;
+  padding: auto;
+}
+
+
 li {
   list-style: none;
   color: white;
@@ -58,62 +98,43 @@ div h2 {
   text-align: center;
 }
 
-div {
-  broder: 4px solid #7c7;
-  height: auto;
-  width: auto;
-  /* flex-direction: column */
-  /* font: Microsoft YaHei */
-}
-
-div .main2 {
-
-  display: flex;
-}
-
 h1 {
   /* background-color: gray; */
   color: red;
+  /* font-weight: normal; */
+  text-transform: none;
+  background-color: gray;
+  color: blue;
   border: 4px solid #7c7;
 }
 
 
 p {
-  color: gray
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  /* line-height: 40px; */
+}
+
+
+div a {
+  background: white;
+  text-decoration: none;
+  color: blue;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+div a:hover {
+  background: yellow;
+  text-decoration: underline;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 2px
 }
 
 
 
-
-.div-1 {
-  /* broder: 4px solid #7c7; */
-  /* float: right; */
-  display: flex;
-  flex-direction: column
-}
-
-
-
-.div-1 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 10px;
-  margin: 10px;
-  /* display: table; */
-}
-
-.div-2 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 20px;
-  margin: 20px;
-}
-
-
-.div-3 h2 {
-  /* broder: 4px solid #7c7; */
-  float: none;
-  padding: 30px;
-  margin: 30px;
-}
 </style>
