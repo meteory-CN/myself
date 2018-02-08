@@ -1,20 +1,18 @@
 <template>
 <div id="app">
   <!-- {{ namelist }} -->
-  <el-row class="header">
-    <Header  v-bind:namelist="namelist"></Header>
-  </el-row>
-  <el-row>
+  <Header  class="header" v-bind:namelist="namelist"></Header>
+  <el-row class="main">
     <el-col :span="4">
       <keep-alive>
-        <Main class="main">
+        <Main class="main-left">
           <h1 slot="title1">this is a  H1 tag</h1>
           <h2 slot="body">this is a  H2 tag</h2>
         </Main>
       </keep-alive>
     </el-col>
     <el-col :span="20">
-      <router-view></router-view>
+      <router-view class="main-right"></router-view>
       <!-- <MainRight v-bind:namelist="namelist" v-on:fatherdeletename="Updatenamelist($event)"></MainRight> -->
     </el-col>
   </el-row>
@@ -70,15 +68,38 @@ export default {
 body {
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
-div.app {
-  display: inline-flex;
-  z-index: 99999;
-  position: inline;
-  /* position: fixed; */
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1
 }
 
-/* .header {
+
+.main {
+  /* top:20px; */
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.main-left {
+  top: 60px;
+  width: 10%;
   position: fixed;
-  width: auto
-} */
+}
+
+.main-right {
+  position: relative;
+  top: 100px;
+  right: -140px;
+  width: 80%;
+  height: 80%;
+  /* z-index: 999 */
+}
+
+
 </style>
