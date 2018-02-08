@@ -56,83 +56,37 @@ export default {
 </script>
 
 <style scoped>
-p {
-  font-family: sans-serif;
+
+
+h2 {
+  position: relative;
+  display: inline-block;
+  background-color: yellow;
+  /* float: right; */
 }
 
 
-a {
-  margin: auto;
-  border: 2px solid gray;
-  padding: 2px;
+ol {
+  display: inline-block;
+  border: 2px solid black;
+  list-style: none;
+  clear: both;
 }
 
+
+.main1 {
+  position: relative;
+}
+.div-4 {
+  position: absolute;
+}
 
 .div-1 {
-  margin: auto;
-  border: 2px solid yellow;
-  padding: 20px;
   display: inline-block;
-  width: 400px;
-  height: auto;
-
-
-}
-
-.div-4 {
-  margin: auto;
-  border: 2px solid blue;
-  padding: auto;
-}
-
-
-li {
-  list-style: none;
-  color: white;
-  background-color: red;
-  font-size: 20px
-}
-
-
-div h2 {
-  text-align: center;
-}
-
-h1 {
-  /* background-color: gray; */
-  color: red;
-  /* font-weight: normal; */
-  text-transform: none;
-  background-color: gray;
-  color: blue;
-  border: 4px solid #7c7;
-}
-
-
-p {
-  color: gray;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  /* line-height: 40px; */
-}
-
-
-div a {
-  background: white;
-  text-decoration: none;
-  color: blue;
-  font-weight: bolder;
-  letter-spacing: 2px;
-}
-
-div a:hover {
-  background: yellow;
-  text-decoration: underline;
-  color: black;
-  font-weight: lighter;
-  letter-spacing: 2px
+  width: 200px;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid black;
 }
 
 
