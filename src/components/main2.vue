@@ -75,10 +75,10 @@ ol {
 
 
 .main1 {
-  position: relative;
+  /* position: relative; */
 }
 .div-4 {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .div-1 {

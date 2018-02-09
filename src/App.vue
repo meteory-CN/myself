@@ -74,7 +74,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0px;
-  z-index: 1
+  z-index: 4
 }
 
 
@@ -82,23 +82,25 @@ body {
   /* top:20px; */
   display: inline-block;
   position: relative;
-  width: 100%;
+  width: 2000px;
+  height: auto;
   overflow: auto;
+  z-index: 3;
 }
 
 .main-left {
   top: 60px;
   width: 10%;
+  /* border: 1px solid black; */
+  height: auto;
   position: fixed;
 }
 
 .main-right {
   position: relative;
-  top: 100px;
-  right: -140px;
-  width: 80%;
-  height: 80%;
-  /* z-index: 999 */
+  top: 30px;
+  left: 200px;
+  z-index: 30
 }
 
 
