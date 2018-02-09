@@ -1,27 +1,36 @@
 <template>
 <div class="header">
-
-      <el-menu default-active="5" class="el-menu-demo" mode="horizontal" @select="">
-        <div class="item">
-          <el-menu-item index="1">统计平台</el-menu-item>
-          <el-menu-item index="2">图标1</el-menu-item>
-          <el-menu-item index="3">用户管理</el-menu-item>
-          <el-menu-item index="4">系统设置</el-menu-item>
-        </div>
-        <div class="inputusername">
-          <el-menu-item v-if="logind" index="5">
-            <el-input v-model="username" placeholder="用户名" /></el-menu-item>
-          <el-menu-item v-if="logind" index="6">
-            <el-input v-model="password" type="password" placeholder="密码" /></el-menu-item>
-          <el-menu-item v-if="logind" index="7">
-            <el-button type="submit" v-on:click="login">login</el-button>
-          </el-menu-item>
-          <el-menu-item v-else="logind" index="8">
-            <el-button type="submit" v-on:click="logout">logout</el-button>
-          </el-menu-item>
-          <el-menu-item v-if="islogin" index="9"><a>WElCOME USER : {{ iUserid }}</a></el-menu-item>
-        </div>
-      </el-menu>
+  <mu-appbar title="统计平台">
+    <mu-icon-button icon="menu" slot="left"/>
+    <mu-text-field  class="loginform" v-if="logind" v-model="username" hintText="username" slot="right"/>
+    <mu-text-field class="loginfrom" v-if="logind" v-model="password" hintText="password" type="password" slot="right"/>
+    <mu-flat-button v-if="logind" v-on:click="login" label="登录" slot="right"/>
+    <mu-flat-button v-if="islogin" v-on:click="logout" label="登出" slot="right"/>
+    <mu-icon-button v-if="islogin" href="https://www.baidu.com"  slot="right">
+    <i class="material-icons">account_box</i>
+    </mu-icon-button>
+  </mu-appbar>
+  <!-- <el-menu default-active="5" class="el-menu-demo" mode="horizontal" @select="">
+    <div class="item">
+      <el-menu-item index="1">统计平台</el-menu-item>
+      <el-menu-item index="2">图标1</el-menu-item>
+      <el-menu-item index="3">用户管理</el-menu-item>
+      <el-menu-item index="4">系统设置</el-menu-item>
+    </div>
+    <div class="inputusername">
+      <el-menu-item v-if="logind" index="5">
+        <el-input v-model="username" placeholder="用户名" /></el-menu-item>
+      <el-menu-item v-if="logind" index="6">
+        <el-input v-model="password" type="password" placeholder="密码" /></el-menu-item>
+      <el-menu-item v-if="logind" index="7">
+        <el-button type="submit" v-on:click="login">login</el-button>
+      </el-menu-item>
+      <el-menu-item v-else="logind" index="8">
+        <el-button type="submit" v-on:click="logout">logout</el-button>
+      </el-menu-item>
+      <el-menu-item v-if="islogin" index="9"><a>WElCOME USER : {{ iUserid }}</a></el-menu-item>
+    </div>
+  </el-menu> -->
 </div>
 </template>
 <script>
@@ -110,17 +119,13 @@ export default {
 }
 </script>
 <style scoped>
-
-div {
-  display: inline;
+.header {
+  opacity: 1.0;
 }
 
-.item {
-  float: left;
+mu-text-field.loginform {
+  position: relative;
+  top: -20px
 }
 
-
-.inputusername {
-  float: right;
-}
 </style>

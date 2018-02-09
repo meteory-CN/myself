@@ -1,7 +1,7 @@
 <template>
 <div id="div-main1">
   <label>Your name is :{{ youname }}</label>
-  <input type="text" v-model.lazy="youname" Placeholder="adasd" />
+  <input type="text" v-model.lazy="youname" Placeholder="youname" />
   <label>search</label>
   <input type="search" v-model="searchword" />
   <div>
