@@ -1,7 +1,9 @@
 <template>
 <div class="header">
   <mu-appbar title="统计平台">
-    <mu-icon-button icon="menu" slot="left"/>
+    <!-- <mu-raised-button icon="menu" label="undocked drawer" @click="toggle(true)"/> -->
+    <mu-icon-button label="菜单" icon="menu" slot="left" @click="toggle(true)"/>
+    <mu-flat-button  label="菜单" slot="left"/>
     <mu-text-field  class="loginform" v-if="logind" v-model="username" hintText="username" slot="right"/>
     <mu-text-field class="loginfrom" v-if="logind" v-model="password" hintText="password" type="password" slot="right"/>
     <mu-flat-button v-if="logind" v-on:click="login" label="登录" slot="right"/>
@@ -9,6 +11,14 @@
     <mu-icon-button v-if="islogin" href="https://www.baidu.com"  slot="right">
     <i class="material-icons">account_box</i>
     </mu-icon-button>
+    <mu-drawer :open="open" :docked="docked" @close="toggle()">
+      <mu-list @itemClick="docked ? '' : toggle()">
+        <mu-list-item title="Menu Item 1"/>
+        <mu-list-item title="Menu Item 2"/>
+        <mu-list-item title="Menu Item 3"/>
+        <mu-list-item v-if="docked" @click.native="open = false" title="Close"/>
+      </mu-list>
+    </mu-drawer>
   </mu-appbar>
   <!-- <el-menu default-active="5" class="el-menu-demo" mode="horizontal" @select="">
     <div class="item">
@@ -73,7 +83,9 @@ export default {
       password: '',
       res: [],
       iUserid: '',
-      islogin: false
+      islogin: false,
+      open: false,
+      docked: true
     }
   },
   methods: {
@@ -114,6 +126,10 @@ export default {
       this.logind = true
       session.removeItem('token')
       console.log('LOGOUT')
+    },
+    toggle (flag) {
+      this.open = !this.open
+      this.docked = !flag
     }
   }
 }
