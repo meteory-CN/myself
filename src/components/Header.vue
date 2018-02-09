@@ -2,7 +2,7 @@
 <div class="header">
   <mu-appbar title="统计平台">
     <!-- <mu-raised-button icon="menu" label="undocked drawer" @click="toggle(true)"/> -->
-    <mu-icon-button label="菜单" icon="menu" slot="left" @click="toggle(true)"/>
+    <mu-icon-button label="菜单" icon="menu" slot="left" @click="toggle()"/>
     <mu-flat-button  label="菜单" slot="left"/>
     <mu-text-field  class="loginform" v-if="logind" v-model="username" hintText="username" slot="right"/>
     <mu-text-field class="loginfrom" v-if="logind" v-model="password" hintText="password" type="password" slot="right"/>
@@ -13,9 +13,9 @@
     </mu-icon-button>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
       <mu-list @itemClick="docked ? '' : toggle()">
-        <mu-list-item title="Menu Item 1"/>
-        <mu-list-item title="Menu Item 2"/>
-        <mu-list-item title="Menu Item 3"/>
+        <mu-list-item  to='/table' title="Menu Item 333"/>
+        <mu-list-item to='/mainright' title="Menu Item 2"/>
+        <mu-list-item to='/main2' title="Menu Item 3"/>
         <mu-list-item v-if="docked" @click.native="open = false" title="Close"/>
       </mu-list>
     </mu-drawer>
@@ -85,7 +85,7 @@ export default {
       iUserid: '',
       islogin: false,
       open: false,
-      docked: true
+      docked: false
     }
   },
   methods: {
@@ -127,7 +127,7 @@ export default {
       session.removeItem('token')
       console.log('LOGOUT')
     },
-    toggle (flag) {
+    toggle: function(flag) {
       this.open = !this.open
       this.docked = !flag
     }
