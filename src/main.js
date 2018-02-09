@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Element from 'element-ui'
 import axios from 'axios'
 import { store } from './store/store'
 import MuseUI from 'muse-ui'
