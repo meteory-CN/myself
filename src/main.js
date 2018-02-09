@@ -5,12 +5,14 @@ import App from './App'
 import router from './router'
 import Element from 'element-ui'
 import axios from 'axios'
-import 'element-ui/lib/theme-chalk/index.css'
 import { store } from './store/store'
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
-Vue.use(Element)
+Vue.use(MuseUI)
+
 
 
 /* eslint-disable no-new */
