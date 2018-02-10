@@ -78,6 +78,10 @@ export default {
     }
   },
   methods: {
+    /**
+     * 登录方法
+     * @return {[type]} [description]
+     */
     login: function() {
       let app = this
       let session = window.sessionStorage;
