@@ -8,15 +8,7 @@
   <mu-flexbox class="emptybox">
   </mu-flexbox>
   <mu-flexbox class="main">
-    <!-- <mu-flexbox-item :span="4">
-      <keep-alive>
-        <Main class="main-left">
-          <h1 slot="title1">this is a  H1 tag</h1>
-          <h2 slot="body">this is a  H2 tag</h2>
-        </Main>
-      </keep-alive>
-    </mu-flexbox-item> -->
-    <mu-flexbox-item class="maincontent":span="24">
+    <mu-flexbox-item class="maincontent" :span="24">
       <router-view class="main-right"></router-view>
     </mu-flexbox-item>
   </mu-flexbox>
@@ -72,7 +64,7 @@ export default {
 .header {
   width: 100%;
   position: fixed;
-  z-index: 3
+  z-index: 1
 }
 
 
@@ -80,9 +72,11 @@ export default {
   position: relative;
   /* top: 50px; */
 }
+
 .maincontent {
   text-align: center;
 }
+
 .emptybox {
   height: 100px;
   width: 100%;
