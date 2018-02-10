@@ -5,7 +5,9 @@ import Table from '@/components/Table'
 import Main1 from '@/components/main1'
 import Main2 from '@/components/main2'
 import Mainright from '@/components/MainRight.vue'
-
+import StatisticalAnalysis from '@/components/StatisticalAnalysis.vue'
+import Customer from '@/components/Customer.vue'
+import UserSetting from '@/components/UserSetting.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +37,21 @@ export default new Router({
       path: '/mainright',
       name: 'mainright',
       component: Mainright
+    },
+    {
+      path: '/StatisticalAnalysis',
+      name: 'StatisticalAnalysis',
+      component: StatisticalAnalysis
+    },
+    {
+      path: '/Customer',
+      name: 'Customer',
+      component: Customer
+    },
+    {
+      path: '/UserSetting',
+      name: 'UserSetting',
+      component: UserSetting
     }
 
   ]

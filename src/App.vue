@@ -23,7 +23,6 @@ import MainRight from '@/components/MainRight';
 import Main1 from '@/components/main1.vue';
 import Main2 from '@/components/main2.vue';
 
-
 export default {
   name: 'app',
   components: {
@@ -31,6 +30,9 @@ export default {
     Header,
     Main,
     MainRight,
+    // Customer,
+    // UserSetting,
+    // StatisticalAnalysis
     // Main1,
     // Main2
   },

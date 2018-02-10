@@ -2,20 +2,31 @@
 <div class="header">
   <mu-appbar title="统计平台">
     <!-- <mu-raised-button icon="menu" label="undocked drawer" @click="toggle(true)"/> -->
-    <mu-icon-button icon="menu" slot="left" @click="toggle()"/>
-    <mu-flat-button label="菜单" slot="left"/>
-    <mu-text-field  v-if="logind" v-model="username" hintText="username" slot="right"/>
-    <mu-text-field  v-if="logind" v-model="password" hintText="password" type="password" slot="right"/>
-    <mu-flat-button v-if="logind" v-on:click="login" label="登录" slot="right"/>
-    <mu-flat-button v-if="login" v-on:click="logout" label="登出" slot="right"/>
-    <mu-icon-button v-if="islogin" href="https://www.baidu.com"  slot="right">
-    <i class="material-icons">account_box</i>
+    <mu-icon-button icon="menu" slot="left" @click="toggle()" />
+    <mu-flat-button label="菜单" slot="left" />
+    <mu-text-field v-if="logind" v-model="username" hintText="username" slot="right" />
+    <mu-text-field v-if="logind" v-model="password" hintText="password" type="password" slot="right" />
+    <mu-flat-button v-if="logind" v-on:click="login" label="登录" slot="right" />
+    <mu-flat-button v-if="login" v-on:click="logout" label="登出" slot="right" />
+    <mu-icon-button v-if="islogin" href="https://www.baidu.com" slot="right">
+      <i class="material-icons">account_box</i>
     </mu-icon-button>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
-      <mu-list @itemClick="docked ? '' : toggle()" >
-        <mu-list-item to='/table' title="Menu Item 1" />
-        <mu-list-item to='/mainright' title="Menu Item 2" />
-        <mu-list-item to='/main2' title="Menu Item 3" />
+      <mu-list @itemClick="docked ? '' : toggle()">
+        <mu-list-item title="客服模块" toggleNested>
+          <mu-list-item to='/Customer' title="包期" slot="nested" />
+          <mu-list-item title="VIP" slot="nested" />
+          <mu-list-item title="充值" slot="nested" />
+          <mu-list-item title="查询" slot="nested" />
+        </mu-list-item>
+        <mu-list-item title="统计分析" toggleNested>
+          <mu-list-item to='/StatisticalAnalysis' title="尤果圈收入统计" slot="nested" />
+          <mu-list-item to='/StatisticalAnalysis' title="尤果圈银果收入统计" slot="nested" />
+          <mu-list-item to='/StatisticalAnalysis' title="游乐场收入统计" slot="nested" />
+        </mu-list-item>
+        <mu-list-item to='/UserSetting' title="用户配置">
+          <mu-icon slot="right" value="info" />
+        </mu-list-item>
         <mu-list-item v-if="docked" @click.native="open = false" title="Close" />
       </mu-list>
     </mu-drawer>
