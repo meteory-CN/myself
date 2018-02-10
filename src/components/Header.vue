@@ -12,7 +12,7 @@
     <i class="material-icons">account_box</i>
     </mu-icon-button>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
-      <mu-list @itemClick="docked ? '' : toggle()">
+      <mu-list @itemClick="docked ? '' : toggle()" >
         <mu-list-item to='/table' title="Menu Item 1" />
         <mu-list-item to='/mainright' title="Menu Item 2" />
         <mu-list-item to='/main2' title="Menu Item 3" />
