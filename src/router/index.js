@@ -5,10 +5,14 @@ import Table from '@/components/Table'
 import Main1 from '@/components/main1'
 import Main2 from '@/components/main2'
 import Mainright from '@/components/MainRight.vue'
-import StatisticalAnalysis from '@/components/StatisticalAnalysis.vue'
-import Customer from '@/components/Customer.vue'
-import UserSetting from '@/components/UserSetting.vue'
-import CustomerPeriod from '@/components/CustomerPeriod.vue'
+// import StatisticalAnalysis from '@/components/StatisticalAnalysis.vue'
+// import Customer from '@/components/Customer.vue'
+// import UserSetting from '@/components/UserSetting.vue'
+// import CustomerPeriod from '@/components/CustomerPeriod.vue'
+import StatisticalAnalysis from '@/components/views/StatisticalAnalysis.vue'
+import Customer from '@/components/views/Customer.vue'
+import UserSetting from '@/components/views/UserSetting.vue'
+import CustomerPeriod from '@/components/views/CustomerPeriod.vue'
 
 Vue.use(Router)
 

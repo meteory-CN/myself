@@ -17,19 +17,12 @@
 
 <script>
 import HelloWorld from '@/components/HelloWorld';
-import Header from '@/components/Header';
-import Main from '@/components/Main';
-import MainRight from '@/components/MainRight';
-import Main1 from '@/components/main1.vue';
-import Main2 from '@/components/main2.vue';
+import Header from '@/components/components/Header';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-    Header,
-    Main,
-    MainRight,
+    Header
     // Customer,
     // UserSetting,
     // StatisticalAnalysis
