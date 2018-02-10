@@ -17,6 +17,7 @@
           <mu-list-item title="VIP" slot="nested" />
           <mu-list-item title="充值" slot="nested" />
           <mu-list-item title="查询" slot="nested" />
+          <mu-list-item title="手动添加送眼镜" slot="nested" />
         </mu-list-item>
         <mu-list-item title="统计分析" toggleNested>
           <mu-list-item to='/StatisticalAnalysis' title="尤果圈收入统计" slot="nested" />

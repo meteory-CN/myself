@@ -1,10 +1,14 @@
 <template>
 <div class="PeriodByiUserId">
-  <mu-text-field class="selectdata" v-model:value="iUserId" hintText="输入用户ID" slot="default" />
+  <div class="form">
+    <from>
+      <mu-text-field class="selectdata" v-model:value="iUserId"  hintText="输入用户ID" slot="left" />
+    </from>
+  </div>
   <mu-flat-button label="提交" primary/>
-  <P>
+  <!-- <P>
     {{ iUserId }}
-  </P>
+  </P> -->
   <div>
     <mu-table :fixedFooter="fixedFooter" :fixedHeader="fixedHeader" :height="height" :enableSelectAll="enableSelectAll" :multiSelectable="multiSelectable" :selectable="selectable" :showCheckbox="showCheckbox">
       <mu-thead slot="header">
@@ -13,6 +17,7 @@
           <mu-th tooltip="名称">用户名称</mu-th>
           <mu-th tooltip="状态">开始时间</mu-th>
           <mu-th tooltip="状态">结束时间</mu-th>
+          <mu-th tooltip="操作">操作</mu-th>
         </mu-tr>
       </mu-thead>
       <mu-tbody>
@@ -21,6 +26,7 @@
           <mu-td>{{item.name}}</mu-td>
           <mu-td>{{item.starttime}}</mu-td>
           <mu-td>{{item.endtime}}</mu-td>
+          <mu-td><mu-raised-button label="删除" secondary/></mu-td>
         </mu-tr>
       </mu-tbody>
       <mu-tfoot slot="footer">
@@ -59,5 +65,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+/*
+div.form {
+  margin-left: 0px;
+  padding-left: 0px;
+  border: 2px solid black
+}
+
+div.form mu-text-field {
+  float: right;
+  width: 80px;
+} */
+
+mu-td mu-flat-button {
+  border-bottom: 1px solid black
+}
+
 </style>

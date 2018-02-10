@@ -5,9 +5,9 @@
       <Header class="header" v-bind:namelist="namelist"></Header>
     </mu-flexbox-item>
   </mu-flexbox>
-  <mu-flexbox class="emptybox">
+  <!-- <mu-flexbox class="emptybox">
   </mu-flexbox>
-  <mu-flexbox class="main">
+  <mu-flexbox class="main"> -->
     <mu-flexbox-item class="maincontent" :span="24">
       <router-view class="main-right"></router-view>
     </mu-flexbox-item>
@@ -66,6 +66,9 @@ export default {
 }
 
 .maincontent {
+  height: 1200px;
+  position: relative;
+  top: 64px;
   text-align: center;
 }
 
