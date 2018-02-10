@@ -1,7 +1,6 @@
 <template>
 <div class="header">
   <mu-appbar title="统计平台">
-    <!-- <mu-raised-button icon="menu" label="undocked drawer" @click="toggle(true)"/> -->
     <mu-icon-button icon="menu" slot="left" @click="toggle()" />
     <mu-flat-button label="菜单" slot="left" />
     <mu-text-field v-if="logind" v-model="username" hintText="username" slot="right" />
@@ -14,7 +13,7 @@
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
       <mu-list @itemClick="docked ? '' : toggle()">
         <mu-list-item title="客服模块" toggleNested>
-          <mu-list-item to='/Customer' title="包期" slot="nested" />
+          <mu-list-item to='/CustomerPeriod' title="包期" slot="nested" />
           <mu-list-item title="VIP" slot="nested" />
           <mu-list-item title="充值" slot="nested" />
           <mu-list-item title="查询" slot="nested" />

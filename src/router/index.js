@@ -8,6 +8,8 @@ import Mainright from '@/components/MainRight.vue'
 import StatisticalAnalysis from '@/components/StatisticalAnalysis.vue'
 import Customer from '@/components/Customer.vue'
 import UserSetting from '@/components/UserSetting.vue'
+import CustomerPeriod from '@/components/CustomerPeriod.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -52,6 +54,11 @@ export default new Router({
       path: '/UserSetting',
       name: 'UserSetting',
       component: UserSetting
+    },
+    {
+      path: '/CustomerPeriod',
+      name: 'CustomerPeriod',
+      component: CustomerPeriod
     }
 
   ]

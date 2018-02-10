@@ -66,13 +66,10 @@ export default {
 .header {
   width: 100%;
   position: fixed;
-  z-index: 1
+  z-index: 99
 }
-
-
 .main-right {
   position: relative;
-  /* top: 50px; */
 }
 
 .maincontent {
@@ -83,4 +80,5 @@ export default {
   height: 100px;
   width: 100%;
 }
+
 </style>
