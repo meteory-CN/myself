@@ -3,7 +3,7 @@
   <mu-tabs :value="activeTab" @change="handleTabChange">
     <mu-tab value="tab1" title="用户ID查询" />
     <mu-tab value="tab2" title="昵称查询" />
-    <mu-tab value="tab3" @active="handleActive1" title="手机号查询" />
+    <mu-tab value="tab3" @active="handleActive" title="手机号查询" />
   </mu-tabs>
   <div v-if="activeTab === 'tab1'">
     <PeriodByiUserId></PeriodByiUserId>
