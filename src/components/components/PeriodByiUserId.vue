@@ -1,9 +1,9 @@
 <template>
 <div class="PeriodByiUserId">
   <div class="form">
-    <from>
+    <form>
       <mu-text-field class="selectdata" v-model:value="iUserId"  hintText="输入用户ID" slot="left" />
-    </from>
+    </form>
   </div>
   <mu-flat-button label="提交" primary/>
   <!-- <P>
@@ -53,6 +53,7 @@ export default {
         starttime: '2018-01-30',
         endtime: '2019-01-30'
       }],
+      height: '300px',
       iUserId: '',
       fixedHeader: true,
       fixedFooter: false,
