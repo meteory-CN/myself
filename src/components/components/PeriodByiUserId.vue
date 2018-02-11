@@ -6,11 +6,11 @@
     </form>
   </div>
   <mu-flat-button label="提交" primary/>
-  <!-- <P>
-    {{ iUserId }}
-  </P> -->
+  <P v-model="getindexlist">
+    {{ getindexlist }}
+  </P>
   <div>
-    <mu-table :fixedFooter="fixedFooter" :fixedHeader="fixedHeader" :height="height" :enableSelectAll="enableSelectAll" :multiSelectable="multiSelectable" :selectable="selectable" :showCheckbox="showCheckbox">
+    <mu-table :fixedFooter="fixedFooter" @rowSelection="handleSelect"   :fixedHeader="fixedHeader" :height="height" :enableSelectAll="enableSelectAll" :multiSelectable="multiSelectable" :selectable="selectable" :showCheckbox="showCheckbox">
       <mu-thead slot="header">
         <mu-tr>
           <mu-th tooltip="ID">用户ID</mu-th>
@@ -20,9 +20,9 @@
           <mu-th tooltip="操作">操作</mu-th>
         </mu-tr>
       </mu-thead>
-      <mu-tbody>
-        <mu-tr v-for="item,index in tableData" :key="index" :selected="item.selected">
-          <mu-td>{{item.iUserId}}</mu-td>
+      <mu-tbody >
+        <mu-tr v-for="item,index in tableData"  :key="index" :selected="item.selected">
+          <mu-td >{{item.iUserId}}</mu-td>
           <mu-td>{{item.name}}</mu-td>
           <mu-td>{{item.starttime}}</mu-td>
           <mu-td>{{item.endtime}}</mu-td>
@@ -47,9 +47,15 @@
 export default {
   data: function() {
     return {
+      SelectData: [],
       tableData: [{
         iUserId: 12364,
         name: 'shijun',
+        starttime: '2018-01-30',
+        endtime: '2019-01-30'
+      },{
+        iUserId: 12365,
+        name: 'shijun1',
         starttime: '2018-01-30',
         endtime: '2019-01-30'
       }],
@@ -59,9 +65,25 @@ export default {
       fixedFooter: false,
       selectable: true,
       multiSelectable: true,
-      enableSelectAll: false,
+      enableSelectAll: true,
       showCheckbox: true
     }
+  },
+  computed: {
+    getindexlist: function() {
+      return this.tableData.map(
+        () => {
+          this.a = 1
+      })
+    }
+  },
+  methods: {
+    handleSelect: function (rowIndexs) {
+      this.tableData = this.tableData.map((item, index) => {
+        item.selected = rowIndexs.indexOf(index) !== -1
+        return item
+      })
+    },
   }
 }
 </script>
