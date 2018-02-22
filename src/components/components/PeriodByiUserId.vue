@@ -6,8 +6,9 @@
     </form>
   </div>
   <mu-flat-button label="提交" primary/>
-  <P v-model="getindexlist">
-    {{ getindexlist }}
+  <P>
+    {{ getselected.iUserId }}
+    {{ getselected }}
   </P>
   <div>
     <mu-table :fixedFooter="fixedFooter" @rowSelection="handleSelect"   :fixedHeader="fixedHeader" :height="height" :enableSelectAll="enableSelectAll" :multiSelectable="multiSelectable" :selectable="selectable" :showCheckbox="showCheckbox">
@@ -47,7 +48,7 @@
 export default {
   data: function() {
     return {
-      SelectData: [],
+      SelectData: [1,2],
       tableData: [{
         iUserId: 12364,
         name: 'shijun',
@@ -70,15 +71,19 @@ export default {
     }
   },
   computed: {
-    getindexlist: function() {
-      return this.tableData.map(
-        () => {
-          this.a = 1
-      })
-    }
+    getselected: function() {
+      let app = this
+      return app.tableData.filter(
+          (item, index) => {
+            return item.selected === true
+            // console.log(item)
+          }
+        )
+      }
   },
   methods: {
     handleSelect: function (rowIndexs) {
+      let app = this
       this.tableData = this.tableData.map((item, index) => {
         item.selected = rowIndexs.indexOf(index) !== -1
         return item
