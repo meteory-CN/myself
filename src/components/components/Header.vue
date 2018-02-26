@@ -14,7 +14,7 @@
       <mu-list @itemClick="docked ? '' : toggle()">
         <mu-list-item title="客服模块" toggleNested>
           <mu-list-item to='/CustomerPeriod' title="包期" slot="nested" />
-          <mu-list-item title="VIP" slot="nested" />
+          <mu-list-item to='/Customer' title="VIP" slot="nested" />
           <mu-list-item title="充值" slot="nested" />
           <mu-list-item title="查询" slot="nested" />
           <mu-list-item title="手动添加送眼镜" slot="nested" />
