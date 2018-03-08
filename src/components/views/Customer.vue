@@ -15,17 +15,10 @@ export default {
       a5.push(...a1);
       a5.push(...b1);
       console.log(a5);
-      // console.log(a3);
-      // console.log(a4);
-
-      // console.log(typeof(a1+b1))
-      // return console.log(a1+b1);
-
     }
   }
 
 
 </script>
-
 <style>
 </style>
