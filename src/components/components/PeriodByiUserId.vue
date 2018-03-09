@@ -5,9 +5,9 @@
       <mu-text-field class="selectdata" v-model:value="iUserId"  hintText="输入用户ID" slot="left" />
     </form>
   </div>
-  <mu-flat-button label="提交" primary/>
+  <mu-flat-button v-on:click="getperioddetail" label="提交" primary/>
   <P>
-    {{ getselected.iUserId }}
+    <!-- {{ getselected.iUserId }} -->
     {{ getselected }}
   </P>
   <div>
@@ -89,6 +89,20 @@ export default {
         return item
       })
     },
+    getperioddetail: function() {
+      let app = this
+      this.$http.get('/api/analysis/period',{
+        params:{
+          iUserId: app.iUserId
+        }
+      })
+        .then(function (response){
+         console.log(response)
+        })
+        .catch( function (error){
+          console.log(error);
+      })
+    }
   }
 }
 </script>
