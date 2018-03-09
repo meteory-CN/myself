@@ -23,11 +23,6 @@ export default {
   name: 'app',
   components: {
     Header
-    // Customer,
-    // UserSetting,
-    // StatisticalAnalysis
-    // Main1,
-    // Main2
   },
   data: function() {
     return {
